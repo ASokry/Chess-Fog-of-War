@@ -386,6 +386,7 @@ class ChessGame:
         player = self._player_turn
         print("<--- " + self.get_player_turn().upper() + " Turn" + " --->")
         self.print_board(player)
+        print("Enter two chess locations separated by a comma (d2, d4).")
         
         # Loop chess game
         while self._game_state == "UNFINISHED":
@@ -421,7 +422,8 @@ class ChessGame:
     
     def exit_play(self, word):
         """
-        Return true if given word is the exit word and ends the game.
+        Return true if given word is the exit word. 
+        Ends the game if true.
         """
         if word == self._exit_word:
             self._game_state = "FINISHED"
@@ -435,18 +437,3 @@ class ChessGame:
 if __name__ == "__main__":
     game = ChessGame()
     game.play_terminal()
-
-# game.make_move('d2', 'd4')
-# game.make_move('g7', 'g5')
-# game.make_move('c1', 'g5')
-# game.make_move('e7', 'e6')
-# game.make_move('g5', 'd8')
-# game.make_move('f8', 'c5')
-# game.make_move('g1', 'f3')
-# game.make_move('c5', 'd4')
-# game.make_move('f3', 'g5')
-# game.make_move('a7', 'a6')
-
-# game.print_board("all")
-# game.print_board("white")
-# game.print_board("black")
