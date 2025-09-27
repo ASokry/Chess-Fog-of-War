@@ -391,7 +391,7 @@ class ChessGame:
         # Loop chess game
         while self._game_state == "UNFINISHED":
             # Get player input
-            player_input = input("Enter 2 locations: ").strip()
+            player_input = input(self.get_player_turn().upper() + " Enter 2 locations: ").strip()
             if self.exit_play(player_input) is True:
                 break
 

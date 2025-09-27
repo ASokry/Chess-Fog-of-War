@@ -209,7 +209,7 @@ class ChessGUI:
         # Display player turn text
         self.display_text(f"Player Turn: {self._game.get_player_turn()}")
         # Hide opposing chess pieces
-        # self.toggle_pieces()
+        self.toggle_pieces()
 
     def display_text(self, text, persist=False):
         """
