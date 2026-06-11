@@ -1,7 +1,8 @@
 # Author: Anthony Sokry
-# Updated: September 2025
+# Updated: June 2026
 
 from tkinter import *
+import tksvg
 from ChessGame import ChessGame
 
 
@@ -54,18 +55,18 @@ class ChessGUI:
 
         # Chess pieces information
         self._total_pieces = 32
-        b_rook = PhotoImage(file='assets/black_pieces/b_r.png')
-        b_knight = PhotoImage(file='assets/black_pieces/b_n.png')
-        b_bishop = PhotoImage(file='assets/black_pieces/b_b.png')
-        b_queen = PhotoImage(file='assets/black_pieces/b_q.png')
-        b_king = PhotoImage(file='assets/black_pieces/b_k.png')
-        b_pawn = PhotoImage(file='assets/black_pieces/b_p.png')
-        w_rook = PhotoImage(file='assets/white_pieces/w_r.png')
-        w_knight = PhotoImage(file='assets/white_pieces/w_n.png')
-        w_bishop = PhotoImage(file='assets/white_pieces/w_b.png')
-        w_queen = PhotoImage(file='assets/white_pieces/w_q.png')
-        w_king = PhotoImage(file='assets/white_pieces/w_k.png')
-        w_pawn = PhotoImage(file='assets/white_pieces/w_p.png')
+        b_rook = tksvg.SvgImage(file='assets/black_pieces/b_r.svg', scale=2.2)
+        b_knight = tksvg.SvgImage(file='assets/black_pieces/b_n.svg', scale=2.2)
+        b_bishop = tksvg.SvgImage(file='assets/black_pieces/b_b.svg', scale=2.2)
+        b_queen = tksvg.SvgImage(file='assets/black_pieces/b_q.svg', scale=2.2)
+        b_king = tksvg.SvgImage(file='assets/black_pieces/b_k.svg', scale=2.2)
+        b_pawn = tksvg.SvgImage(file='assets/black_pieces/b_p.svg', scale=2.2)
+        w_rook = tksvg.SvgImage(file='assets/white_pieces/w_r.svg', scale=2.2)
+        w_knight = tksvg.SvgImage(file='assets/white_pieces/w_n.svg', scale=2.2)
+        w_bishop = tksvg.SvgImage(file='assets/white_pieces/w_b.svg', scale=2.2)
+        w_queen = tksvg.SvgImage(file='assets/white_pieces/w_q.svg', scale=2.2)
+        w_king = tksvg.SvgImage(file='assets/white_pieces/w_k.svg', scale=2.2)
+        w_pawn = tksvg.SvgImage(file='assets/white_pieces/w_p.svg', scale=2.2)
         self._b_piece_order = [b_rook, b_knight, b_bishop, b_queen, b_king, b_bishop, b_knight, b_rook]
         self._w_piece_order = [w_rook, w_knight, w_bishop, w_queen, w_king, w_bishop, w_knight, w_rook]
         self._pieces_dict = {
