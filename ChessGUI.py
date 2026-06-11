@@ -29,7 +29,7 @@ class ChessGUI:
 
         # Window title and icon
         self._window.title("Chess: Fog of War")
-        icon = PhotoImage(file='assets/black_pieces/b_q.png')
+        icon = tksvg.SvgImage(file='assets/black_pieces/b_r.svg', scale=1.0)
         self._window.iconphoto(True, icon)
 
         # Pause variables

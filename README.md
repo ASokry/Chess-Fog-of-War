@@ -19,9 +19,9 @@ The game ends when a player's king is captured by the opposing player.
 
 * Install [Python](https://www.python.org/downloads/)
 * Add Python to <code>Path</code>
-* Run one of the following files:
-    * ChessGUI.py (recommended)
-    * ChessGame.py
+* Run one of the following commands in shell:
+    * `python ChessGUI.py` (recommended)
+    * `python ChessGame.py`
 
 ## How To Play ChessGUI
 
