@@ -4,7 +4,7 @@
 
 ## Description
 
-A local two player fog of war chess game built with Python and Python's Tkinter library. Pieces move and capture the same way as in standard chess, but there are **no checks, checkmates, castling, en passant, or pawn promotion**. Players are not informed if their king is in check, and both staying in check or moving into check are legal moves. 
+A local two player fog of war chess game built with Python's Tkinter library. Pieces move and capture the same way as in standard chess, but there are **no checks, checkmates, castling, en passant, or pawn promotion**. Players are not informed if their king is in check, and both staying in check or moving into check are legal moves. 
 
 Each player will see a different version of the board, where they can only view their **own pieces** and **opposing pieces that can be captured**. The rest of the opponent's pieces are hidden. Hidden pieces are clearly indicated to avoid confusion with visible empty squares. 
 
@@ -17,7 +17,7 @@ The game ends when a player's king is captured by the opposing player.
 
 ## Instructions
 
-* Install Python[https://www.python.org/downloads/](https://www.python.org/downloads/)
+* Install [Python](https://www.python.org/downloads/)
 * Add Python to <code>Path</code>
 * Run one of the following files:
     * ChessGUI.py (recommended)
